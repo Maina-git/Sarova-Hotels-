@@ -17,6 +17,7 @@ const Hero = () => {
   const nextSlide = () => {
     setDirection("right");
     setCurrent((prev) => (prev + 1) % images.length);
+    console.log(direction);
   };
 
   const prevSlide = () => {
@@ -37,7 +38,7 @@ const goToSlide = (index: number) => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-200 flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         {images.map((img, index) => {
           const isActive = index === current;
@@ -69,7 +70,7 @@ const goToSlide = (index: number) => {
             Sarova Hotels
           </span>
         </h1>
-<p className="mt-6 text-gray-200 md:text-xl leading-relaxed">
+<p className="mt-6 text-gray-200 md:text-sm leading-relaxed">
   Luxury stays across Kenya designed to give you the perfect balance of comfort, elegance, and world-class hospitality. 
   From breathtaking coastal resorts in Mombasa to serene safari lodges in Maasai Mara and premium city hotels in Nairobi, 
   every stay is crafted to deliver unforgettable experiences. Enjoy exceptional service, modern facilities, fine dining, 
