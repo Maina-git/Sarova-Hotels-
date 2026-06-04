@@ -20,7 +20,7 @@ const Navbar = () => {
 
         
           <div className="hidden md:flex items-center gap-8">
-            {["Home", "Hotels", "Rooms", "Bookings", "Contacts"].map(
+            {["Home", "Hotels", "Rooms", "Bookings", "About", "Contacts"].map(
               (item, index) => (
                 <a
                   key={index}
@@ -37,17 +37,11 @@ const Navbar = () => {
             )}
           </div>
 
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-5">
             <Link
-              to="/login"
-              className="px-5 py-2 border border-slate-300 rounded-lg hover:bg-slate-100 transition">
-              Login
-            </Link>
-
-            <Link
-              to="/signup"
+              to="/sign-in"
               className="px-5 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition">
-              Sign Up
+              Sign In
             </Link>
           </div>
         </div>
