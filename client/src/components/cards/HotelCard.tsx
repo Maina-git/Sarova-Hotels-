@@ -13,8 +13,7 @@ const HotelCard = ({ hotel }: any) => {
         <img
           src={hotel.image}
           alt={hotel.name}
-          className="w-full h-60 object-cover"
-        />
+          className="w-full h-60 object-cover"/>
 
         <div className="p-5">
 
@@ -54,8 +53,7 @@ const HotelCard = ({ hotel }: any) => {
 
           <button
             onClick={() => setOpenModal(true)}
-            className="w-full mt-5 py-3 rounded-full border border-gray-300 font-medium hover:bg-gray-100 transition cursor-pointer"
-          >
+            className="w-full mt-5 py-3 rounded-full border border-gray-300 font-medium hover:bg-gray-100 transition cursor-pointer">
             View Rooms
           </button>
 
@@ -66,8 +64,7 @@ const HotelCard = ({ hotel }: any) => {
         hotelName={hotel.name}
         hotelLocation = {hotel.location}
         isOpen={openModal}
-        onClose={() => setOpenModal(false)}
-      />
+        onClose={() => setOpenModal(false)}/>
    
       </>
   );

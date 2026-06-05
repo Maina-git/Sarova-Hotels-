@@ -39,7 +39,7 @@ const bookings = [
 
 const BookingsPopup = ({ onClose }: Props) => {
   return (
-    <div className="fixed inset-0 bg-black/70 z-[9999] flex justify-center items-center p-4">
+    <div className="fixed inset-0 bg-black/70 z-9999 flex justify-center items-center p-4">
 
       <div className="bg-white w-full max-w-5xl rounded-3xl p-8 max-h-[90vh] overflow-y-auto relative">
 
