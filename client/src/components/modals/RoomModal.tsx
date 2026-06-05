@@ -62,7 +62,7 @@ const RoomModal = ({ isOpen, onClose, hotelName, hotelLocation }: RoomModalProps
           >
 
     
-        <div className="sticky top-0 bg-white border-b p-5 flex justify-between items-center overflow-y-auto z-10">
+        <div className="sticky top-0 bg-white p-5 flex justify-between items-center overflow-y-auto z-10">
           <div>
             <h2 className="text-2xl font-bold text-gray-800">
               {hotelName}
