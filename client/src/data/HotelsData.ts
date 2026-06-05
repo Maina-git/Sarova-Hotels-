@@ -156,3 +156,35 @@ export const HotelsData: Hotel[] = [
 ];
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
