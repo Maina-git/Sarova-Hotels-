@@ -58,8 +58,7 @@ const RoomModal = ({ isOpen, onClose, hotelName, hotelLocation }: RoomModalProps
           style={{
             overflowY:"scroll",
             scrollbarWidth:"none"
-          }}
-          >
+          }}>
 
     
         <div className="sticky top-0 bg-white p-5 flex justify-between items-center overflow-y-auto z-10">
@@ -89,7 +88,7 @@ const RoomModal = ({ isOpen, onClose, hotelName, hotelLocation }: RoomModalProps
                 key={index}
                 className="relative overflow-hidden rounded-xl group">
                 <img
-                  src={room.image.trim()}
+                  src={room.image.trim()} 
                   alt={`Room ${index + 1}`}
                   className="w-full h-44 object-cover group-hover:scale-105 transition"/>
 
@@ -99,7 +98,7 @@ const RoomModal = ({ isOpen, onClose, hotelName, hotelLocation }: RoomModalProps
                   {liked.includes(index) ? (
                     <FaHeart className="text-red-500" />
                   ) : (
-                    <FaRegHeart />
+                    <FaRegHeart/>
                   )}
                 </button>
 
