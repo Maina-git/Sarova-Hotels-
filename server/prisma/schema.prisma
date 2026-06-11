@@ -9,7 +9,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+    url      = env("DATABASE_URL")
 }
 
 
@@ -19,4 +19,45 @@ model User {
   email String @unique
   password String
   createdAt DateTime @default(now())
+}
+
+
+model Hotel {
+  id            String   @id @default(cuid())
+  name          String
+  location      String
+  description   String
+
+  image         String
+  gallery       String[]
+
+  startingPrice Float
+
+  rating        Float    @default(0)
+  reviewCount   Int      @default(0)
+
+  amenities     String[]
+
+  rooms         Room[]
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Room {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+
+  price       Float
+  image       String
+
+  capacity    Int
+  available   Boolean  @default(true)
+
+  hotelId     String
+  hotel       Hotel @relation(fields: [hotelId], references: [id])
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }

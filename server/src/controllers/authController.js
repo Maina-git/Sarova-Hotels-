@@ -75,7 +75,7 @@ export const loginUser = async (req, res) => {
 
     if (!user) {
       return res.status(401).json({
-        message: "Invalid credentials",
+        message: "User not found",
       });
     }
 
