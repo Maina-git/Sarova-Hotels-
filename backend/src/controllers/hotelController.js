@@ -21,6 +21,7 @@ export const createHotel = async (req, res) => {
         gallery,
         startingPrice,
         amenities,
+        
       },
     });
 
