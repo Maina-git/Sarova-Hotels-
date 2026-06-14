@@ -2,13 +2,13 @@ import dotenv from "dotenv";
 import express from "express";
 import authRoutes from "./routes/authRoutes.js";
 import hotelRoutes from "./routes/hotelRoutes.js";
-//import  cors from "cors";
+import cors from "cors";
 
 dotenv.config();
 const app = express();
 
 app.use(express.json());
-//app.use(cors())
+app.use(cors())
 
 const PORT = process.env.PORT || 3000;
 

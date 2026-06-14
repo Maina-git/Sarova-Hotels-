@@ -1,3 +1,4 @@
+/*
 import { Link } from "react-router-dom";
 
 
@@ -51,6 +52,82 @@ const Navbar = () => {
 };
 
 export default Navbar;
+*/
+
+interface NavbarProps {
+  openAuthModal: () => void;
+}
+
+const Navbar = ({ openAuthModal }: NavbarProps) => {
+  return (
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center justify-between h-20">
+
+          <div className="flex items-center gap-3">
+            <img
+              src="/11952675.54821da71073f.jpg"
+              className="w-12.5 h-12.5"
+              alt="logo"
+            />
+
+            <h1 className="text-2xl text-gray-500">
+              Sarova Hotels
+            </h1>
+          </div>
+
+          <div className="hidden md:flex items-center gap-8">
+            {[
+              "Home",
+              "Hotels",
+              "Rooms",
+              "Bookings",
+              "About",
+              "Contacts",
+            ].map((item, index) => (
+              <a
+                key={index}
+                href={`#${item.toLowerCase()}`}
+                className="
+                  relative text-slate-700
+                  hover:text-yellow-500
+                  transition-colors duration-300
+                  after:content-['']
+                  after:absolute
+                  after:left-0
+                  after:-bottom-1
+                  after:h-0.5
+                  after:w-0
+                  after:bg-yellow-500
+                  after:transition-all
+                  after:duration-300
+                  hover:after:w-full
+                "
+              >
+                {item}
+              </a>
+            ))}
+          </div>
+
+          <div className="hidden md:flex items-center gap-5">
+            <button
+              onClick={openAuthModal}
+              className="px-5 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition"
+            >
+              Sign In
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+
+
 
 
 

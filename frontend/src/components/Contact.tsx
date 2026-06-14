@@ -32,8 +32,7 @@ const Contact = () => {
             <img
               src="/images/pexels-las-vegas-1846684.jpg "
               alt="Sarova Hotel"
-              className="w-full h-175 object-cover"
-            />
+              className="w-full h-175 object-cover"/>
 
           
             <div className="absolute inset-0 bg-black/50"></div>

@@ -60,26 +60,3 @@ const RoomCard = ({ room, onBook }: Props) => {
 
 export default RoomCard;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
