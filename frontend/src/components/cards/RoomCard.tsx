@@ -52,7 +52,6 @@ const RoomCard = ({ room, onBook }: Props) => {
           className="w-full mt-6 bg-yellow-500 hover:bg-yellow-600 text-white py-3 rounded-xl transition">
           Book Room
         </button>
-
       </div>
     </div>
   );

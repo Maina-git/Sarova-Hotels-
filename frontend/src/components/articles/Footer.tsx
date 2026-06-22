@@ -13,7 +13,6 @@ const Footer = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-          {/* Logo */}
           <div>
             <h1 className="text-3xl font-bold text-yellow-500">
               Sarova Hotels
@@ -26,7 +25,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h2 className="text-xl font-semibold">
               Quick Links
@@ -48,7 +46,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h2 className="text-xl font-semibold">
               Services
@@ -62,7 +59,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Socials */}
           <div>
             <h2 className="text-xl font-semibold">
               Follow Us
@@ -72,29 +68,25 @@ const Footer = () => {
 
               <a
                 href="#"
-                className="bg-yellow-500 p-3 rounded-full"
-              >
+                className="bg-yellow-500 p-3 rounded-full">
                 <FaFacebookF />
               </a>
 
               <a
                 href="#"
-                className="bg-yellow-500 p-3 rounded-full"
-              >
+                className="bg-yellow-500 p-3 rounded-full">
                 <FaInstagram />
               </a>
 
               <a
                 href="#"
-                className="bg-yellow-500 p-3 rounded-full"
-              >
+                className="bg-yellow-500 p-3 rounded-full">
                 <FaTwitter />
               </a>
 
               <a
                 href="#"
-                className="bg-yellow-500 p-3 rounded-full"
-              >
+                className="bg-yellow-500 p-3 rounded-full">
                 <FaLinkedinIn />
               </a>
 
@@ -105,7 +97,6 @@ const Footer = () => {
 
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-gray-800 py-6 text-center text-gray-500">
         © 2026 Sarova Hotels. All Rights Reserved.
       </div>

@@ -84,9 +84,8 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
 
     <button
       onClick={onClose}
-      className="absolute top-4 right-4 text-white hover:scale-110 transition"
-    >
-      <X size={22} />
+      className="absolute top-4 right-4 text-white hover:scale-110 transition">
+      <X size={22}/>
     </button>
 
     <div className="p-8">
@@ -106,10 +105,8 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
               border-gray-200
               p-3
               outline-none
-              focus:border-yellow-500
-            "
-            required
-          />
+              focus:border-yellow-500"
+            required/>
         )}
 
         <input
@@ -127,8 +124,7 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
             outline-none
             focus:border-yellow-500
           "
-          required
-        />
+          required/>
 
         <input
           type="password"
@@ -145,8 +141,7 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
             outline-none
             focus:border-yellow-500
           "
-          required
-        />
+          required/>
 
         <button
           type="submit"
@@ -163,8 +158,7 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
             text-white
             transition
             hover:scale-[1.02]
-          "
-        >
+          ">
           {loading
             ? "Please wait..."
             : isLogin
@@ -176,14 +170,13 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
       <div className="mt-6 text-center">
         <button
           onClick={() => setIsLogin(!isLogin)}
-          className="font-medium text-amber-600 hover:text-orange-600"
-        >
+          className="font-medium text-amber-600 hover:text-orange-600">
           {isLogin
             ? "Don't have an account? Register"
             : "Already have an account? Sign In"}
         </button>
       </div>
-    </div>
+    </div>                                                                          
   </div>
 </div>
   );

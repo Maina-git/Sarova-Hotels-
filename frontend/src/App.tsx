@@ -30,8 +30,7 @@ const App = () => {
               <Contact />
               <Footer />
             </>
-          }
-        />
+          }/>
       </Routes>
       <AuthModal
         isOpen={showAuthModal}
