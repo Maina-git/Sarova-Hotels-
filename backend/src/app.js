@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import express from "express";
 import authRoutes from "./routes/authRoutes.js";
 import hotelRoutes from "./routes/hotelRoutes.js";
+import bookingRoutes from "../src/routes/bookingRoutes.js";
 import cors from "cors";
 
 dotenv.config();
@@ -23,6 +24,7 @@ app.listen(PORT, ()=>{
 
 app.use("/api/auth", authRoutes);
 app.use("/api/hotels", hotelRoutes);
+app.use("/api/bookings", bookingRoutes);
 
 
 
